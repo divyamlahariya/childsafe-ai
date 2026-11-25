@@ -1,0 +1,328 @@
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5ef;
+    color: #263b35;
+    line-height: 1.7;
+}
+
+
+
+
+header {
+    background-color: #203b33;
+    color: white;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h2 {
+    color: #d7e7cf;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 22px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #b9d6a9;
+}
+
+
+
+
+.hero {
+    min-height: 430px;
+    padding: 100px 10%;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(
+        120deg,
+        #dce8d9,
+        #edf0e7,
+        #e7e4ef
+    );
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.small-heading {
+    color: #668b73;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: 43px;
+    line-height: 1.25;
+    margin: 18px 0;
+}
+
+.hero h1 span {
+    color: #668b73;
+}
+
+.hero-content > p:not(.small-heading) {
+    color: #52645b;
+    margin-bottom: 25px;
+}
+
+.main-button {
+    display: inline-block;
+    background-color: #355d4c;
+    color: white;
+    padding: 12px 23px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.main-button:hover {
+    background-color: #527d67;
+}
+
+
+
+
+.section {
+    padding: 65px 10%;
+}
+
+.section h2 {
+    font-size: 28px;
+    margin-bottom: 18px;
+    color: #29473a;
+}
+
+.section-intro {
+    color: #69786f;
+    margin-bottom: 25px;
+}
+
+.section > p {
+    max-width: 900px;
+}
+
+
+
+
+.cards {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 220px;
+    border: 1px solid #e3e8df;
+}
+
+.card h3 {
+    color: #426b55;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #65736b;
+    font-size: 15px;
+}
+
+
+
+
+.risk-card {
+    border-left: 4px solid #9a8bb6;
+}
+
+
+
+
+.analysis-section {
+    background-color: #e9eee7;
+}
+
+.upload-box,
+.result-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    margin-top: 25px;
+    border: 1px solid #dce4da;
+}
+
+.upload-box h3,
+.result-box h3 {
+    color: #355d4c;
+    margin-bottom: 10px;
+}
+
+.upload-box input {
+    display: block;
+    margin: 20px 0;
+    max-width: 100%;
+}
+
+.image-area {
+    min-height: 170px;
+    border: 2px dashed #a9bba9;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    margin: 20px 0;
+    color: #849188;
+}
+
+#preview {
+    display: none;
+    max-width: 100%;
+    max-height: 350px;
+    margin: auto;
+    border-radius: 8px;
+}
+
+#analyseButton {
+    background-color: #355d4c;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#analyseButton:hover {
+    background-color: #527d67;
+}
+
+#analyseButton:disabled {
+    background-color: #9aa99e;
+    cursor: not-allowed;
+}
+
+#status {
+    margin-top: 15px;
+    color: #668b73;
+    font-size: 14px;
+}
+
+
+
+
+.score {
+    margin: 25px 0;
+}
+
+.score-heading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.progress {
+    background-color: #e5eae4;
+    height: 12px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    width: 0%;
+    height: 100%;
+    background-color: #668b73;
+    border-radius: 10px;
+    transition: width 0.5s;
+}
+
+#finalResult {
+    background-color: #edf3eb;
+    padding: 15px;
+    border-radius: 7px;
+    margin-top: 25px;
+    color: #355d4c;
+    font-weight: bold;
+}
+
+.disclaimer {
+    font-size: 12px;
+    color: #7b867e;
+    margin-top: 20px;
+}
+
+
+
+
+.steps {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.steps p {
+    margin: 12px ;
+}
+
+
+
+
+footer {
+    background-color: #203b33;
+    color: #e6eee7;
+    text-align: center;
+    padding: 35px 10%;
+}
+
+footer p {
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+
+
+
+@media (max-width: 650px) {
+
+    header {
+        gap: 12px;
+    }
+
+    nav a {
+        margin-left: 0;
+        margin-right: 12px;
+    }
+
+    .hero {
+        padding: 65px 7%;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .section {
+        padding: 45px 7%;
+    }
+
+}
