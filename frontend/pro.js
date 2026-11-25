@@ -4,8 +4,8 @@
 
 let model;
 
-const modelURL = "./trained model/model.json";
-const metadataURL = "./trained model/metadata.json";
+const modelURL = "./frontend/trained%20model/model.json";
+const metadataURL = "./frontend/trained%20--model/metadata.json";
 
 
 // 2. Get HTML Elements
