@@ -1,0 +1,272 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Child Safety AI</title>
+
+    <link rel="stylesheet" href="pro.css">
+</head>
+
+<body>
+
+    
+    <header>
+        <h2>ChildSafe AI</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#risks">Risks</a>
+            <a href="#analysis">Analysis</a>
+        </nav>
+    </header>
+
+
+    
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="small-heading">AI BASED CHILD SAFETY PROJECT</p>
+
+            <h1>Making Mobile Gaming <span>Safer</span> for Children</h1>
+
+            <p>
+                An AI-based approach to identifying potentially
+                concerning visual content in mobile gaming
+                environments through image analysis.
+            </p>
+
+            <a href="#analysis" class="main-button">
+                Start Image Analysis
+            </a>
+
+        </div>
+
+    </section>
+
+
+    
+    <section id="about" class="section">
+
+        <h2>About Our Project</h2>
+
+        <p>
+            Mobile gaming has become a common part of children's
+            digital activities. However, certain gaming environments
+            may contain content that raises child-safety concerns.
+
+            This project explores the use of Artificial Intelligence
+            and Computer Vision to identify visual patterns related
+            to bullying and violent game content.
+
+            Users can upload a game screenshot and receive an
+            AI-generated classification result.
+        </p>
+
+    </section>
+
+
+    
+    <section class="section objectives">
+
+        <h2>Our Objectives</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Identify Risk Indicators</h3>
+                <p>
+                    Recognise visual patterns associated with
+                    bullying and violent content in mobile games.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Use Computer Vision</h3>
+                <p>
+                    Apply image classification to analyse
+                    screenshots from gaming environments.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Provide Initial Assessment</h3>
+                <p>
+                    Display model prediction scores to help
+                    understand potentially concerning content.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    
+    <section id="risks" class="section">
+
+        <h2>Risk Categories</h2>
+
+        <p class="section-intro">
+            Our current AI prototype focuses on two visual
+            risk categories.
+        </p>
+
+        <div class="cards">
+
+            <div class="card risk-card">
+                <h3>Bullying-Related Content</h3>
+
+                <p>
+                    Visual scenes involving hostile interactions,
+                    intimidation, or aggressive behaviour between
+                    game characters.
+                </p>
+            </div>
+
+            <div class="card risk-card">
+                <h3>Violent Game Content</h3>
+
+                <p>
+                    Game scenes containing combat, physical
+                    aggression, fighting, or other violence-related
+                    visual elements.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    
+    <section id="analysis" class="section analysis-section">
+
+        <h2>AI Image Analysis</h2>
+
+        <p class="section-intro">
+            Upload a screenshot from a mobile game to analyse
+            its visual content using our trained AI model.
+        </p>
+
+        <div class="upload-box">
+
+            <h3>Upload Game Screenshot</h3>
+
+            <p>Select an image from your computer.</p>
+
+            <input
+                type="file"
+                id="imageUpload"
+                accept="image/*"
+            >
+
+            <div class="image-area">
+
+                <img
+                    id="preview"
+                    alt="Uploaded game screenshot"
+                >
+
+                <p id="imageMessage">
+                    Your selected image will appear here.
+                </p>
+
+            </div>
+
+            <button id="analyseButton" disabled>
+                Analyse Image
+            </button>
+
+            <p id="status">
+                Loading AI model...
+            </p>
+
+        </div>
+
+
+        
+        <div class="result-box">
+
+            <h3>Analysis Results</h3>
+
+            <p id="resultMessage">
+                Upload an image to begin analysis.
+            </p>
+
+            <div class="score">
+
+                <div class="score-heading">
+                    <span>Bullying Indicator</span>
+                    <span id="bullyingScore">--%</span>
+                </div>
+
+                <div class="progress">
+                    <div id="bullyingBar" class="progress-fill"></div>
+                </div>
+
+            </div>
+
+
+            <div class="score">
+
+                <div class="score-heading">
+                    <span>Violent Game Content</span>
+                    <span id="violenceScore">--%</span>
+                </div>
+
+                <div class="progress">
+                    <div id="violenceBar" class="progress-fill"></div>
+                </div>
+
+            </div>
+
+            <div id="finalResult">
+                Results will appear after image analysis.
+            </div>
+            </div>
+
+    </section>
+
+
+    
+    <section class="section">
+
+        <h2>How Does the Analysis Work?</h2>
+
+        <div class="steps">
+
+            <p><strong>01. Upload:</strong>
+                A user selects a mobile game screenshot.</p>
+
+            <p><strong>02. Processing:</strong>
+                The image is provided to the trained AI model.</p>
+
+            <p><strong>03. Classification:</strong>
+                The model identifies visual patterns associated
+                with its trained categories.</p>
+
+            <p><strong>04. Results:</strong>
+                The website displays prediction scores for
+                bullying and violent game content.</p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- AI Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+
+    <script src="pro.js"></script>
+
+</body>
+</html>
